@@ -1,0 +1,69 @@
+{
+    "enquestes": {
+        "enquesta": [
+		
+            {
+                "id": 1,
+                "titol": "Intención de voto",
+                "activa": false,
+                "pregunta": [
+                    {
+                        "ordre": 1,
+                        "text": "Qué partido político piensas votar",
+                        "tipus": {
+                            "opcio_multiple": {
+                                "opcio_1": "PP",
+                                "opcio_2": "PSOE",
+                                "opcio_3": "VOX",
+								"opcio_4": "OTRO"
+                            },
+                            "text_lliure": {}
+                        }
+                    },
+                    {
+                        "ordre": 2,
+                        "text": "Motivo por el cual votas a este partido",
+                        "tipus": {
+                            "text_lliure": {}
+                        }
+                    }
+                ]
+            },
+            
+			{
+                "id": 2,
+                "titol": "Mayores preocupaciones del momento actual",
+                "activa": true,
+                "pregunta": [
+                    {
+                        "ordre": 1,
+                        "text": "En un ámbito económico cual sería la mayor inquietud",
+                        "tipus": {
+                            "opcio_multiple": {
+                                "opcio_1": "Empleo",
+                                "opcio_2": "Tipos de Interés",
+                                "opcio_3": "Inflación",
+								"Opcio_4": "Vivienda",
+								"Opcio_5": "Otros"
+                            },
+                            "text_lliure": {}
+                        }
+                    },
+                    {
+                        "ordre": 2,
+                        "text": "En un ámbito social cual sería la mayor inquietud",
+                        "tipus": {
+                            "opcio_multiple": {
+                                "opcio_1": "Umbral de pobreza",
+                                "opcio_2": "Escalada bélica a nivel global",
+                                "opcio_3": "Dominio independiente global de la IA",
+								"opcio_4": "Otros"
+                            },
+                            "text_lliure": {}
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}
