@@ -1,0 +1,71 @@
+
+* {
+box-sizing: border-box;
+}
+/*Layout principal, engloba los 4 bloques*/
+body{
+	display:flex;
+	border: 1px solid black;
+	padding: 20px;
+	flex-wrap:wrap;
+	gap:10px;
+}
+/*Primer bloque, obligamos a que ocupe el 100% de la fila*/
+header {
+	display:flex;
+	justify-content: space-between;
+	flex-basis:100%;
+	border: 5px solid black;
+}
+header h1{
+	background-color:#2c3e50;
+	color:white;
+}	
+header ul li a{
+	background-color:#2c3e50;
+	color:white;
+}
+/*efecte Hover en los enlaces de navegación*/
+/*Cambia color de fondo y del texto*/
+a:hover {
+	background-color: cyan;
+	color: red;
+}
+/*Segundo bloque, obligamos que ocupe el 70% de la fila*/
+main {
+	display:flex;
+	flex-direction: column;
+	gap:1rem;
+	flex-basis:70%;	
+}
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+/*ejemplo box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.15)*/
+article {
+  border-left: 4px solid #27ae60;
+  background-color: white;
+  box-shadow: 0 4px 12px grey;
+  color:#27ae60
+}
+/*Tercer bloque, obligamos que ocupe el 28% de la misma fila que el 2º*/
+aside {
+	display:flex;
+	flex-direction: column;
+	background-color:#ecf0f1;
+	flex-basis: 28%;	
+}
+aside ul li {
+	background-color:#ecf0f1;	
+}
+/*Cuarto bloque, obligamos que ocupe toda la fila*/
+footer {
+	display: flex;
+	justify-content: center; /* Centra horizontalmente*/
+	flex-basis: 100%;
+	border: 5px solid black;	
+}
+footer p{
+	background-color: #2c3e50;
+	color: silver;
+}
+
+
